@@ -37,7 +37,7 @@ function ColorsShowController(   $routeParams   ){
 
   console.log('$routeParams.index is', $routeParams.index);
 
-  vm.color = COLORS[33];
+  vm.color = COLORS[$routeParams.index];
 }
 
 

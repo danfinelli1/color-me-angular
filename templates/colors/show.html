@@ -1,10 +1,6 @@
-<h1>Show</h1>
-<p>You are viewing colors/show.html</p>
-<p>Your goal is to:</p>
+<div ng-init="myStyle={'background-color': colorCtrl.color.name, 'height': '100vh', 'font-color': parseInt(colorCtrl.color.hex)}">
+  <h1>{{colorCtrl.color.name}}</h1>
+  <h3>{{colorCtrl.color.hex}}</h3>
 
-<ol>
-  <li>Display the name of the color</li>
-  <li>Display the hex of the color</li>
-  <li>Display the actual color, using ngStyle</li>
-  <li>Add a "Back" button that returns to the homepage</li>
-</ol>
+                        <a ng-href='/'><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"> <strong>Back</strong></span></button></a>
+</div>
